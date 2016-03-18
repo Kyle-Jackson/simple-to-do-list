@@ -5,4 +5,11 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.todo {
+  color: black;
+}
+
+.crossOut {
+  text-decoration: line-through;
 }

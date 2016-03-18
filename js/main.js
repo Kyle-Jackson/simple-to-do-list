@@ -1,9 +1,15 @@
-var $input = $('#grocery-input');
-var $list = $(".list");
+var $input = $('#list-input');
+var $list = $('.todo');
 
-$('#grocery-list').on('submit', function (e) {
+$('form').on('submit', function (e) {
   var $li = $('<li>');
+
   e.preventDefault();
   $li.html($input.val());
+  $li.val('');
   $list.append($li);
+});
+
+$('ul').on('click', 'li', function () {
+  $(this).toggleClass('crossOut')
 });
