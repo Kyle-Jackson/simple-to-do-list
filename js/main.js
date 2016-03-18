@@ -11,5 +11,5 @@ $('form').on('submit', function (e) {
 });
 
 $('ul').on('click', 'li', function () {
-  $(this).toggleClass('crossOut')
+  $(this).toggleClass('crossOut');
 });
